@@ -20,7 +20,7 @@ clean: down
 
 fclean:
 	@${COMPOSE_CMD} down -v
-	docker system prune -f
+	docker system prune -f --volumes
 
 re:	fclean all
 
